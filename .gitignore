@@ -1,0 +1,5 @@
+node_modules
+dist
+out/node_modules/
+gui/node_modules/
+gui/.cache 

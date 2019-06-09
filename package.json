@@ -1,0 +1,29 @@
+{
+  "name": "react-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./gui/main.js -o ./out/renderer/app.js -d ./out/renderer/ && yarn  --cwd ./out build",
+    "start": "parcel build ./gui/main.js -o ./out/renderer/app.js -d ./out/renderer/ && yarn  --cwd ./out start",
+    "devg": "yarn --cwd ./gui dev",
+    "deve": "yarn --cwd ./out dev",
+    "dev": "concurrently \"yarn devg\" \"yarn deve\""
+  },
+  "author": "Walter Winser",
+  "license": "ISC",
+  "dependencies": {
+    "electron-store": "^3.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0" 
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^5.0.2",
+    "electron-builder": "^20.43.0",
+    "parcel-bundler": "^1.0.2"
+  }
+}
